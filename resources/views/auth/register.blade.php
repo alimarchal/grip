@@ -13,7 +13,10 @@
                 <x-label for="name" value="{{ __('Name') }}" />
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
-
+            <div class="mt-4">
+                <x-label for="employee_no" value="{{ __('BAJK Employee No') }}" />
+                <x-input id="employee_no" class="block mt-1 w-full" type="text" name="employee_no" :value="old('employee_no')" required autofocus autocomplete="employee_no" placeholder="PP-626 or CP-426" />
+            </div>
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />

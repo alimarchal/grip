@@ -12,6 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(GrievanceDropDownSeeder::class);
+        $this->call(DivisionSeeder::class);
+        $this->call(PermissionsDemoSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
